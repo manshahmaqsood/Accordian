@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Poppins&family=Space+Grotesk:wght@700&display=swap');
+
+*{
+	box-sizing: border-box;
+}
+html,body{
+	margin: 0px;
+	font-size: 18px;
+	font-family: 'Croissant One', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
+}
+a {
+    text-decoration: none;
+
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    display: flex;
+    background-color: #222831;
+    justify-content: space-around;
+    padding: 1rem 0;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+
+}
+
+.logo img {
+    width: 100px;
+    border-radius: 20%;
+    margin-right: 30rem;
+}
+
+.header_logo {
+    color: rgb(233, 222, 222);
+    font-weight: 500;
+}
+
+.nav_list {
+    display: flex;
+    align-items: center;
+}
+
+.nav_item {
+    margin: 0 8px;
+}
+
+.nav_link {
+    padding: 10px;
+    color: #eee;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.nav_link:hover {
+    background-color: rgb(151, 151, 214);
+}
+
+.header_toggle,
+.header_close {
+    display: none;
+}
+.container{
+    max-width: 600px;
+    margin: 0px auto;
+}
+#accordian, #plus , #accordian-2, #plus-2, #accordian-3, #plus-3, #accordian-4, #plus-4{
+    width:100%;
+    margin:0 auto;
+    height:auto;
+    background-color: rgb(172, 120, 172);
+    padding: 10px;
+    box-sizing: border-box;
+    cursor:pointer;
+    position: relative;
+    text-align: left;     
+}
+
+#plus, #plus-2, #plus-3 ,#plus-4{
+    position: absolute;
+    width:50px;
+    top:0px;
+    right:0px;
+    text-align: right;
+  
+}
+#content,#content-4{
+     font-size: 20px;
+     width:100%;
+     height:auto;
+     padding:30px;
+
+}
+#content-2{
+    font-size: 20px;
+    width:100%;
+    height:auto;
+    padding:50px;
+
+}
+#content-3{    
+    font-size: 20px;
+    width:100%;
+    height:auto;
+    padding:30px;
+
+}
+
+
+.container{
+	max-width: 800px;
+	margin: 0 auto;
+}
+.accordion_box{
+	border: 4px solid gray;
+	padding: 0px 0px 1px  0px;
+	background: purple;
+	color: white;
+	border-radius: 7px;
+	margin-bottom: 20px;
+}
+.accordion_box.active{
+	color: beige;
+	background: rgb(212, 141, 206);	
+	transition: 0.9s;
+    font-size: 22px;
+
+	
+}
+.acc_trigger{
+	padding: 15px 30px 15px 30px;
+	margin: 0;
+	font-size: 25px;
+	position: relative;
+	cursor: pointer;
+    background-color: purple;
+    border-radius: 6px;
+   
+}
+
+.acc_trigger i{
+	position: absolute;
+	right: 6px;
+	top: 22px;
+	font-size: 20px;
+    background-color: purple;
+	
+}
+
+.acc_container{
+	display: none;
+}
+.acc_container p{
+	margin-top: 0px;
+	line-height: 1.6;
+    padding:8px 12px 0px 15px;
+    font-size: 18px;
+}
+

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
+<title>Accordion</title>
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="accordiannn.css">
+</head>
+<body>
+	<header>
+		<div class="logo">
+		  <img src="Logo.PNG" alt="LOGO">
+		  <!-- <a href="" class="header_logo">MANSHAH</a> -->
+		</div>
+		<nav class="nav" id="nav_menu">
+		  <ion-icon name="close-circle-outline" class="header_close" id="close_menu"></ion-icon>
+		  <ul class="nav_list">
+			<li class="nav_item"><a href="" class="nav_link">Home</a></li>
+			<li class="nav_item"><a href="" class="nav_link">About</a></li>
+			<li class="nav_item"><a href="" class="nav_link">Skills</a></li>
+			<li class="nav_item"><a href="" class="nav_link">Porfolio</a></li>
+			<li class="nav_item"><a href="" class="nav_link">Contact</a></li>
+		  </ul>
+		</nav>
+		<ion-icon name="menu" class="header_toggle " id="toggle_menu"></ion-icon>
+	  </header>
+	  <hr>
+<div class="container">
+	
+
+<div class="accordion_area">
+	<div class="accordion_box">
+		<h3 class="acc_trigger">First Accordion Item <i class="fa fa-plus" aria-hidden="true"></i></h3>
+		<div class="acc_container">
+			<p>Unlike regular towels where sand can get caught in loop fibres, AbsorbLite’s smooth and silk engineering allows for sand to slip off easily. So you leave the beach at the beach.  </p>
+		</div>
+	</div>
+	<div class="accordion_box">
+		<h3 class="acc_trigger">Second Accordion Item <i class="fa fa-plus" aria-hidden="true"></i></h3>
+		<div class="acc_container">
+			<p>Shipping and returns are free for everyone, everywhere in the world :)</p>
+			<p><strong>Free worldwide shipping</strong></p>
+
+			<p>Your order will be dispatched the next day.</p>
+		</div>
+	</div>
+	<div class="accordion_box">
+		<h3 class="acc_trigger">Third Accordian Item<i class="fa fa-plus" aria-hidden="true"></i></h3>
+		<div class="acc_container">
+			<p>Our exclusive AbsorbLite™ fabric is a durable form of microfiber (polyamide/polyester).</p>
+			<p>Taken care of properly it shoud last you years. We recommend cold tumble dry.</p>
+		</div>
+	</div>
+	<div class="accordion_box">
+		<h3 class="acc_trigger">Fourth Accordion Item <i class="fa fa-plus" aria-hidden="true"></i></h3>
+		<div class="acc_container">
+			<p>We want you to love tyour Tesalate towel. If you don’t, return it for free even if you have used it. No questions asked.</p>
+		</div>
+	</div>
+</div>
+
+</div>
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+crossorigin="anonymous"></script>
+<script type="text/javascript" src="custome.js"></script>
+<script>
+	const navMenu = document.getElementById('nav_menu'),
+    toggleMenu = document.getElementById('toggle_menu'),
+    closeMenu = document.getElementById('close_menu')
+
+toggleMenu.addEventListener('click', () => {
+    navMenu.classList.toggle('show')
+})
+closeMenu.addEventListener('click', () => {
+    navMenu.classList.remove('show')
+})
+</script>
+</body>
+</html>

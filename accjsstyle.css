@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Poppins&family=Space+Grotesk:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.accordion{
+    font-family: 'Croissant One', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
+    width: 700px;
+    margin: 0 auto;
+    padding-top: 40px;
+  }
+  .plus{
+    float:right;
+  }
+  .plus:hover{
+    cursor: pointer;
+  }
+  .accordion-item {
+    margin-bottom: 10px;
+  }
+  
+  .accordion-title {
+    color: #fff;
+    background-color: #4edc2b;
+    cursor: pointer;
+    padding: 10px;
+    transition: background-color 1s;
+  }
+  
+  .accordion-title:hover {
+    background-color: #1bb94b;
+  }
+  
+  .accordion-content {
+    background: rgb(87, 236, 106);
+    display: none;
+    padding: 10px;
+  }
+
+  
+      .accordion-item.active .accordion-content{
+        display: block;
+        transition: 3s;
+    
+      }
